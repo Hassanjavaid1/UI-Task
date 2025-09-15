@@ -1,0 +1,190 @@
+body[data-bs-theme="dark"] {
+  background-color: black;
+  font-family: "Plus Jakarta Sans" !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/*Custom Classess*/
+
+.bg-dark-gray {
+  background: #21222d !important;
+}
+
+.bg-light-gray {
+  background: #1a1b26 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+  width: 8px;
+  background: #1a1b26;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+  background: #2d2f38;
+  border-radius: 4px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+  color: #1376ff !important;
+  border-bottom: 1px solid #1376ff !important;
+  border-width: 2px !important;
+  border-radius: 0px !important;
+  font-weight: 600 !important;
+}
+
+.table-link.active {
+  background-color: #3a3a45 !important;
+  color: #1376ff !important;
+  border-bottom: 0px !important;
+  border-radius: 4px !important;
+  font-weight: normal !important;
+}
+
+.h-fit-content {
+  height: fit-content !important;
+}
+
+.w-fit-content {
+  width: fit-content !important;
+}
+.outline-none{
+  outline: none !important;
+}
+.font-8 {
+  font-size: 0.8rem !important;
+}
+
+.font-14 {
+  font-size: 14px !important;
+}
+
+.font-15 {
+  font-size: 15px !important;
+}
+
+.font-13 {
+  font-size: 13px !important;
+}
+
+.font-12 {
+  font-size: 12px !important;
+}
+
+.font-20 {
+  font-size: 20px !important;
+}
+
+.font-26 {
+  font-size: 26px !important;
+}
+
+/**********************/
+.sidebar-container {
+  width: 7%;
+  background-color: #1f2124;
+}
+
+.icon-size {
+  font-size: 1.4rem;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.3rem;
+}
+
+.icon-size:hover {
+  background-color: #2d2f38;
+  color: #1376ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-button::before {
+  content: "\f231";
+  /* Bootstrap chevron-down icon */
+  font-family: "bootstrap-icons";
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::before {
+  transform: rotate(90deg);
+}
+
+.bg-card1 {
+  background: #e6f6ff;
+  background: radial-gradient(
+    circle,
+    rgba(230, 246, 255, 1) 0%,
+    rgba(199, 236, 255, 1) 50%,
+    rgba(241, 230, 253, 1) 100%
+  );
+}
+
+.bg-card2 {
+  background: #e2f5ff;
+  background: linear-gradient(
+    90deg,
+    rgba(226, 245, 255, 1) 16%,
+    rgba(241, 225, 255, 1) 100%,
+    rgba(241, 230, 253, 1) 57%
+  );
+}
+
+.bg-card3 {
+  background: #f4f6eb;
+  background: linear-gradient(
+    83deg,
+    rgba(244, 246, 235, 1) 16%,
+    rgba(245, 224, 241, 1) 100%,
+    rgba(245, 224, 241, 1) 57%
+  );
+}
+
+.bg-card4 {
+  background: #b1f5e2;
+  background: linear-gradient(
+    216deg,
+    rgba(177, 245, 226, 1) 0%,
+    rgba(222, 239, 217, 1) 55%,
+    rgba(251, 232, 217, 1) 100%
+  );
+}
+
+.bg-card5 {
+  background: #afe5f1;
+  background: linear-gradient(
+    216deg,
+    rgba(175, 229, 241, 1) 0%,
+    rgba(221, 247, 249, 1) 55%,
+    rgba(245, 253, 252, 1) 100%
+  );
+}
+
+.table.bg-transparent,
+.table.bg-transparent thead,
+.table.bg-transparent tbody th,
+.table.bg-transparent tbody td {
+  background-color: transparent !important;
+  box-shadow: none !important; /* to remove Bootstrap's inset shadows */
+}
