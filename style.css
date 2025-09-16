@@ -18,6 +18,11 @@ body[data-bs-theme="dark"] {
   background: #1a1b26 !important;
 }
 
+/* The general name of the color #292f37 is "Charcoal Gray" or "Dark Grayish Blue". */
+.bg-gray-blue {
+  background: #292f37 !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -60,9 +65,15 @@ body[data-bs-theme="dark"] {
 .w-fit-content {
   width: fit-content !important;
 }
-.outline-none{
+
+.outline-none {
   outline: none !important;
 }
+
+.gap-0-5 {
+  gap: 0.5rem !important;
+}
+
 .font-8 {
   font-size: 0.8rem !important;
 }
@@ -83,6 +94,10 @@ body[data-bs-theme="dark"] {
   font-size: 12px !important;
 }
 
+.font-18 {
+  font-size: 18px !important;
+}
+
 .font-20 {
   font-size: 20px !important;
 }
@@ -93,8 +108,10 @@ body[data-bs-theme="dark"] {
 
 /**********************/
 .sidebar-container {
-  width: 7%;
+  width: 76px;
   background-color: #1f2124;
+  padding-right: 0.4rem !important;
+  padding-left: .4rem !important;
 }
 
 .icon-size {
@@ -107,6 +124,13 @@ body[data-bs-theme="dark"] {
   background-color: #2d2f38;
   color: #1376ff;
   transition: all 0.3s ease-in-out;
+}
+
+.form-control.inputField {
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important;
+  padding-left: 2.7rem !important;
+
 }
 
 .profile-img {
@@ -133,52 +157,42 @@ body[data-bs-theme="dark"] {
 
 .bg-card1 {
   background: #e6f6ff;
-  background: radial-gradient(
-    circle,
-    rgba(230, 246, 255, 1) 0%,
-    rgba(199, 236, 255, 1) 50%,
-    rgba(241, 230, 253, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(230, 246, 255, 1) 0%,
+      rgba(199, 236, 255, 1) 50%,
+      rgba(241, 230, 253, 1) 100%);
 }
 
 .bg-card2 {
   background: #e2f5ff;
-  background: linear-gradient(
-    90deg,
-    rgba(226, 245, 255, 1) 16%,
-    rgba(241, 225, 255, 1) 100%,
-    rgba(241, 230, 253, 1) 57%
-  );
+  background: linear-gradient(90deg,
+      rgba(226, 245, 255, 1) 16%,
+      rgba(241, 225, 255, 1) 100%,
+      rgba(241, 230, 253, 1) 57%);
 }
 
 .bg-card3 {
   background: #f4f6eb;
-  background: linear-gradient(
-    83deg,
-    rgba(244, 246, 235, 1) 16%,
-    rgba(245, 224, 241, 1) 100%,
-    rgba(245, 224, 241, 1) 57%
-  );
+  background: linear-gradient(83deg,
+      rgba(244, 246, 235, 1) 16%,
+      rgba(245, 224, 241, 1) 100%,
+      rgba(245, 224, 241, 1) 57%);
 }
 
 .bg-card4 {
   background: #b1f5e2;
-  background: linear-gradient(
-    216deg,
-    rgba(177, 245, 226, 1) 0%,
-    rgba(222, 239, 217, 1) 55%,
-    rgba(251, 232, 217, 1) 100%
-  );
+  background: linear-gradient(216deg,
+      rgba(177, 245, 226, 1) 0%,
+      rgba(222, 239, 217, 1) 55%,
+      rgba(251, 232, 217, 1) 100%);
 }
 
 .bg-card5 {
   background: #afe5f1;
-  background: linear-gradient(
-    216deg,
-    rgba(175, 229, 241, 1) 0%,
-    rgba(221, 247, 249, 1) 55%,
-    rgba(245, 253, 252, 1) 100%
-  );
+  background: linear-gradient(216deg,
+      rgba(175, 229, 241, 1) 0%,
+      rgba(221, 247, 249, 1) 55%,
+      rgba(245, 253, 252, 1) 100%);
 }
 
 .table.bg-transparent,
@@ -186,5 +200,6 @@ body[data-bs-theme="dark"] {
 .table.bg-transparent tbody th,
 .table.bg-transparent tbody td {
   background-color: transparent !important;
-  box-shadow: none !important; /* to remove Bootstrap's inset shadows */
+  box-shadow: none !important;
+  /* to remove Bootstrap's inset shadows */
 }

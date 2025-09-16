@@ -18,19 +18,21 @@
 
 <body data-bs-theme="dark">
   <div class="container-fluid">
-    <div class="row ">
+    <div class="row gap-0-5">
       <!-- Sidebar column 1 -->
-      <div class="sidebar-container d-flex flex-column align-items-center py-2 col-sm-12 col-md-6 col-lg-1 min-vh-100">
-        <a class="w-75" href="#">
+      <div
+        class="sidebar-container d-flex flex-column align-items-center py-2 px-2 me-1 col-sm-12 col-md-6 col-lg-1 min-vh-100">
+        <a class="w-100" href="#">
           <img src="assets/logo.png" alt="Bootstrap" class="w-100 object-fit-cover" />
         </a>
         <div class="w-100 d-flex flex-column gap-1 my-3">
-          <a href="#" class="nav-link w-100 icon-size bg-primary text-center my-2 text-light"><i
+          <a href="#" class="nav-link w-100 icon-size bg-gray-blue text-center my-2 py-2 text-muted border"><i
               class="bi bi-search"></i></a>
-
-          <a href="#" class="nav-link w-100 icon-size d-flex align-items-center justify-content-between gap-1">
-            <i class="bi bi-bookmark-star"></i><i class="bi bi-chevron-right fs-6"></i>
-          </a>
+          <div class="border-bottom pb-3 mb-3">
+            <a href="#" class="nav-link w-100 icon-size d-flex align-items-center justify-content-between gap-1 ">
+              <i class="bi bi-bookmark-star"></i><i class="bi bi-chevron-right fs-6"></i>
+            </a>
+          </div>
           <a href="#" class="nav-link w-100 icon-size"><i class="bi bi-boxes"></i></a>
           <a href="#" class="nav-link w-100 icon-size"><i class="bi bi-person-plus"></i></a>
           <a href="#" class="nav-link w-100 icon-size d-flex align-items-center justify-content-between gap-1">
@@ -70,9 +72,9 @@
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <!--Search Bar-->
-              <form class="d-flex align-items-center justify-content-center position-relative w-25" role="search">
-                <input class="form-control me-2 bg-dark-gray text-light py-2 ps-5" type="search"
-                  placeholder="Search notes" aria-label="Search" />
+              <form class="d-flex align-items-center justify-content-center position-relative w-100" role="search">
+                <input class="form-control inputField me-2 bg-dark-gray text-light py-2 ps-5" type="search"
+                  placeholder="Search contact" aria-label="Search" />
                 <i class="bi bi-search text-muted position-absolute start-0 ps-3 "></i>
               </form>
               <!--Icons & Themes-->
@@ -124,8 +126,8 @@
                 <!-- Themes -->
                 <div class="ms-4">
                   <div class="bg-dark-gray d-flex gap-2 align-items-center justify-content-center rounded-1 p-1 border">
-                    <i class="bi bi-sun fs-6 bg-secondary px-2 py-1 rounded-1 cursor-pointer"></i>
-                    <i class="bi bi-moon-fill fs-6 px-2 py-1 rounded-1 cursor-pointer"></i>
+                    <i class="bi bi-moon-fill bg-secondary font-18 px-2 py-1 rounded-1 cursor-pointer"></i>
+                    <i class="bi bi-sun font-18 px-2 py-1 rounded-1 cursor-pointer"></i>
                   </div>
                 </div>
               </div>
@@ -150,8 +152,14 @@
           <!--User Profile Info-->
           <div class="card bg-light-gray border-0 px-3 py-4 rounded-0 vh-100 overflow-y-scroll"
             style="width: 21rem;padding-bottom: 4.5rem!important;">
-            <img src="./assets/userProfile.png" class="card-img-top object-fit-cover rounded-3"
-              style="height: 39%; object-position: center 20%!important;" alt="...">
+            <div class="position-relative" style="height: 39%;">
+              <img src="./assets/userProfile.png" class="card-img-top object-fit-cover rounded-3"
+                style="height: 100%; object-position: center 20%!important;" alt="...">
+              <div class="bg-light-gray position-absolute p-2 cursor-pointer"
+                style="bottom: 1rem; right: 1rem; width: 49px; height: 49px; text-align: center; border-radius: 50px;">
+                <i class="bi bi-camera fs-5 text-primary"></i>
+              </div>
+            </div>
             <div class="card-body px-1">
               <h5 class="card-title fw-semibold fs-4 text-light">Max Hollaway</h5>
               <button
@@ -335,7 +343,7 @@
               <div class="tab-pane fade pt-3 px-2 fs-5 text-muted" id="pills-ranks" role="tabpanel"
                 aria-labelledby="pills-ranks-tab" tabindex="0">No ranks found.</div>
 
-              <div class="tab-pane fade show active" id="pills-invoice" role="tabpanel"
+              <div class="tab-pane fade show active border-0 outline-none" id="pills-invoice" role="tabpanel"
                 aria-labelledby="pills-invoice-tab" tabindex="0">
                 <div class="card-group align-items-flex-start gap-2 my-2">
                   <div class="card border-1 bg-card1 text-dark rounded-1 h-">
@@ -362,7 +370,7 @@
                       <div class="d-flex align-items-center justify-content-between mb-0">
                         <h5 class="card-title">Appointment Booked</h5>
                         <div class="fs-3 d-flex align-items-center justify-content-center rounded-2 px-3"
-                          style="width: 49px;height: 49px; background: #F1E1FF;">
+                          style="width: 49px;height: 49px; background: #f5eaef;">
                           <i class="bi bi-calendar-plus-fill font-26"></i>
                         </div>
                       </div>
@@ -459,15 +467,16 @@
                     </li>
                   </ul>
                   <!--Table Tabs Content-->
-                  <div class="tab-content px-3 outline-none" id="pills-tabContent">
+                  <div class="tab-content px-3 outline-none border-0" id="pills-tabContent">
                     <div class="tab-pane fade p-3 px-2 fs-5 text-muted" id="pills-paid" role="tabpanel"
                       aria-labelledby="pills-paid-tab" tabindex="0">Nothing found here.</div>
                     <div class="tab-pane fade p-3 px-2 fs-5 text-muted" id="pills-credit" role="tabpanel"
                       aria-labelledby="pills-credit-tab" tabindex="0">No credit found.</div>
                     <!--Table-->
-                    <div class="tab-pane fade show active fs-5 text-muted" id="pills-actions" role="tabpanel"
-                      aria-labelledby="pills-actions-tab" tabindex="0">
-                      <div class=" overflow-y-scroll pb-3 bg-transparent" style="height: 35vh;">
+                    <div class="tab-pane fade show active fs-5 text-muted border-0 outline-none" id="pills-actions"
+                      role="tabpanel" aria-labelledby="pills-actions-tab" tabindex="0">
+                      <div class="overflow-y-scroll pb-3 bg-transparent border-0 outline-none"
+                        style="height: 35vh; max-height: 40vh;" tabindex="0">
                         <table class="table align-middle table-responsive bg-transparent table-hover table-borderless">
                           <thead class="bg-dark-gray border-bottom">
                             <tr class="font-15 bg-dark-gray">
@@ -590,7 +599,8 @@
                         </table>
                         <!--Total-->
                         <div class="fs-5 text-light fw-semibold text-end me-5">
-                         <span class="text-muted font-15 fw-normal">Total Paid:</span> 8272.28   <span class="text-muted font-15 fw-normal">Total Owned:</span> 21:67
+                          <span class="text-muted font-15 fw-normal">Total Paid:</span> 8272.28 <span
+                            class="text-muted font-15 fw-normal">Total Owned:</span> 21:67
                         </div>
                         <!--Pagination-->
                         <nav aria-label="Page navigation example">
@@ -609,11 +619,9 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
